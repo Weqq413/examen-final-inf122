@@ -22,7 +22,7 @@ function Im (){
             setEstado(data.species.name),
             setHabilidad(data.moves[0].move.name),
             setAlto(data.game_indices[0].game_index),
-            setAncho(data.types[0].weight),
+            setAncho(data.types.weight),
             setHp(data.moves[0].move.order),
             setId(data.held_items.id)
         });
