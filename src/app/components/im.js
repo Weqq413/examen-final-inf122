@@ -26,12 +26,12 @@ function Im (){
             setEstado(data.species.name),
             setHabilidad(data.moves[0].move.name),
             setAlto(data.game_indices[0].game_index),
-            setAncho(data.types[0].type.weight),
+            setAncho(data.types.weight),
             setHp(data.stats[0].base-stats),
             setId(data.game_indices[3].game_index),
             setAtaque(data.stats[0].base-stats),
-            setDefenza(data.stats[0].base-stats),
-            setSp(data.stats[0].base-stats)
+            setDefenza(data.stats[2].base-stats),
+            setSp(data.stats[1].base-stats)
         });
 },[]);
 return(
